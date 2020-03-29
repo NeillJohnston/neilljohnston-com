@@ -8,8 +8,7 @@ create = 'create table ROUTES(METHOD varchar(8), ROUTE varchar(4096), PATH varch
 display = 'select * from ROUTES;'
 
 routes = [
-    'GET / /index.html 0',
-    'GET /blog /blog/index.html 0',
+    'GET / /underconstruction.html 0',
     'ERROR 404 /404/index.html 0'
 ]
 with_quotes = lambda row: [x+val+x for val, x in zip(row.split(), '""" ')]

@@ -29,3 +29,24 @@ div.markdown > p {
 	font-size: 16px;
 	margin-bottom: 8px;
 }
+
+div.markdown > p.code-c {
+	background-color: var(--gray);
+	padding: 8px;
+	white-space: pre-wrap;
+	font-family: 'Source Code Pro', monospace;
+}
+
+span.code-normal {
+	font-family: 'Source Code Pro', monospace;
+}
+
+span.code-bolded {
+	font-weight: bold;
+	font-family: 'Source Code Pro', monospace;
+}
+
+span.code-italics {
+	font-style: italic;
+	font-family: 'Source Code Pro', monospace;
+}
