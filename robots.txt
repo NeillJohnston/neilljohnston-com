@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /script/
+Disallow: /sql/
+Disallow: /style/
