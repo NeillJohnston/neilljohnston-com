@@ -10,7 +10,7 @@ const nothing = (text) => '<span class="code-normal">' + text + '</span>';
 const bolded = (text) => '<span class="code-bolded">' + text + '</span>';
 const italics = (text) => '<span class="code-italics">' + text + '</span>';
 
-tokens = [
+c = [
   // Whitespace
   new Token('ws',  nothing, '\\s+'),
   // Browser-converted characters
@@ -28,9 +28,26 @@ tokens = [
   new Token('num', nothing, '\\d+(\\.\\d+)?'),
   new Token('id',  bolded,  '\\w[\\w\\d]*'),
   new Token('op',  nothing, '[^\\w\\d\\s]+')
+];
+
+py = [
+  // Whitespace
+  new Token('ws',  nothing, '\\s+'),
+  // Browser-converted characters
+  new Token('bcc', nothing, '&.*?;'),
+  // Single-line comments
+  new Token('slc', italics, '#.*?(?=(\\n|\\r\\n))'),
+  // Flow-control
+  new Token('fc',  nothing, 'for|while|if|elif|else'),
+  // Keywords
+  new Token('kw',  nothing, 'def|in|as|is|and|not|or'),
+  // Numbers, operators, identifiers
+  new Token('num', nothing, '\\d+(\\.\\d+)?'),
+  new Token('id',  bolded,  '\\w[\\w\\d]*'),
+  new Token('op',  nothing, '[^\\w\\d\\s]+')
 ]
 
-function markup(text) {
+function markup(text, tokens) {
   var marked = [];
   while (text.length > 0) {
     var matched = false;
@@ -61,11 +78,11 @@ function markup(text) {
 }
 
 function doAllMarkup() {
-  const allCode = document.getElementsByClassName('code-c');
+  const allCode = document.getElementsByTagName('code');
   const length = allCode.length;
   for (var i = 0; i < length; ++i) {
     const code = allCode.item(i);
-    code.innerHTML = markup(code.innerHTML);
+    code.innerHTML = markup(code.innerHTML, c);
   }
 }
 

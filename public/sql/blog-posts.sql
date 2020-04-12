@@ -1,0 +1,1 @@
+SELECT * FROM blog ORDER BY posted desc;

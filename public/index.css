@@ -1,6 +1,7 @@
 div#title {
   position: relative;
-  padding: 80px 0px;
+  padding: 60px 0px;
+  background-color: var(--gray);
 }
 
 div#title > h1 {

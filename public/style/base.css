@@ -1,0 +1,132 @@
+/* Global styling */
+
+:root {
+  --gray: #afbfb7;
+  --black: #172f27;
+}
+
+* {
+  font-weight: 400;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: var(--black);
+  scroll-behavior: smooth;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* General styling */
+
+body {
+  background-color: white;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 8px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 20px;
+  margin: 8px;
+  margin-top: 2em;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 8px;
+  margin-top: 2em;
+}
+
+p {
+  margin: 8px;
+}
+
+ol {
+  margin: 8px;
+  margin-left: 2em;
+}
+
+ul {
+  margin: 8px;
+  margin-left: 2em;
+}
+
+blockquote {
+  margin: 8px;
+  border-left: 4px solid var(--gray);
+}
+
+pre {
+  margin: 8px;
+  padding: 0.5em;
+  background-color: var(--black);
+  color: white;
+  font-family: 'Source Code Pro', 'Courier New', Courier, monospace;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+b {
+  font-weight: 700;
+}
+
+a {
+  color: var(--black);
+}
+
+a:hover {
+  color: var(--gray);
+}
+
+/* CSS classes */
+
+.content {
+  margin: 40px 25%;
+  font-size: 16px;
+}
+
+.center-contents {
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+.nav > * {
+  margin: 20px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .content {
+    margin: 40px 10%;
+  }
+
+  .nav > * {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .content {
+    margin: 40px 40px;
+  }
+
+  .nav > * {
+    margin: 12px;
+  }
+}

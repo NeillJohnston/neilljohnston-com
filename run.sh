@@ -1,3 +1,3 @@
 python3 write_routes.py test.db
 echo "running server..."
-./server test.cfg
+../web-server/out/server dev.cfg

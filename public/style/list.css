@@ -1,0 +1,24 @@
+.list {
+  list-style-type: none;
+  width: 100%;
+}
+
+.list > li {
+  padding: 16px 0;
+  width: 100%;
+  border-top: 1px solid var(--gray);
+  display: flex;
+  justify-content: space-between;
+}
+
+.list > :last-child {
+  border-bottom: 1px solid var(--gray);
+}
+
+.list > li > div {
+  text-align: right;
+}
+
+.list-item-tags {
+  color: var(--gray);
+}
