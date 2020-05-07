@@ -6,7 +6,7 @@ I'm going into my senior year of pursuing a bachelor's degree in computer scienc
 
 Right now I'm just trying to get employed as a software engineer, but I have at least a little interest in things like computer architecture, embedded systems, and programming language design - we'll see what the future holds.
 
-I've been a member of the UF Programming Team for 2 years (competing at 2 ICPC regionals). Now as captain, I'll be involved with getting our new and old members ready to take down UCF this fall! Or more realistically FIT, but a man can dream. (And I'm only picking on FIT because Melbourne is my hometown.)
+I've been a member of the UF Programming Team for 2 years (competing at 2 ICPC regionals). Now as captain, I'll be involved with getting our new and old members ready to take down UCF this fall! Or more realistically FIT, but a man can dream. (I'm licensed to pick on FIT because Melbourne is my hometown.)
 
 If you want to learn more about me as a programmer, check out my [projects!](/projects) Or if you want to learn more about me as a person, feel free to send a message:
 
@@ -18,7 +18,7 @@ If you want to learn more about me as a programmer, check out my [projects!](/pr
 
 ## Other
 
-I'm also sort of active on [Project Euler.](https://projecteuler.net) Loving math was half of what got me into CS and Project Euler has great problems.
+I'm also sort of active on [Project Euler.](https://projecteuler.net) Loving math was half of what got me into CS and Project Euler has great problems, so I've been working my way through the archives since 2017.
 
 ![](https://projecteuler.net/profile/NeillJohnston.png)
 
