@@ -1,21 +1,25 @@
 .list {
   list-style-type: none;
   width: 100%;
+  margin: 0;
 }
 
 .list > li {
   padding: 16px 0;
   width: 100%;
   border-top: 1px solid var(--gray);
-  display: flex;
-  justify-content: space-between;
 }
 
 .list > :last-child {
   border-bottom: 1px solid var(--gray);
 }
 
-.list > li > div {
+.brief > li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brief > li > div {
   text-align: right;
 }
 

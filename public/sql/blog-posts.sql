@@ -1,1 +1,1 @@
-SELECT * FROM blog ORDER BY posted desc;
+SELECT * FROM blog ORDER BY posted DESC;

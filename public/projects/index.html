@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style/base.css">
+    <link rel="stylesheet" type="text/css" href="/style/list.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="nav">
+      <a href="/"><b>Neill Johnston</b></a>
+      <a href="/about">about</a>
+      <a href="/blog">blog</a>
+      <a href="/projects">projects</a>
+    </div>
+    <div class="content">
+      <ul class="list">
+        <li>
+          <h1>web-server</h1>
+          <p>
+            <a href="https://github.com/NeillJohnston/web-server">The backend of this website.</a>
+          </p>
+          <p>
+            My simple web server, written in C.
+            Uses SQLite for routing table/other data and OpenSSL to make HTTPS connections.
+          </p>
+          <p>
+            <a href="/blog/this-site">(Post)</a>
+          </p>
+        </li>
+        <li>
+          <h1>classic-tetris-bot</h1>
+          <p>
+            <a href="https://github.com/NeillJohnston/classic-tetris-bot">A bot that plays NES Tetris.</a>
+          </p>
+          <p>
+            Two parts to it: the emulator interface (written in Lua) and the brain (written in C++).
+            The interface reads the memory of the NES to figure out what the grid looks like, then sends this information to the brain in a separate process.
+            The brains makes a decision and sends it back to the interface, then the interface puts some controller inputs in and slides the piece into place.
+          </p>
+          <p>
+            Decisions are evaluated by hand-written cost functions: a function takes in a grid state and outputs a number based on how desirable this state is.
+            Almost every way of placing both the current piece and the next piece are considered - that means all rotations and positions including simple (one button press) tucks and spins.
+            Comes out to only around 2000 future states per piece, which is a very reasonable search space.
+          </p>
+          <p>
+            Thanks to <a href="https://meatfighter.com/nintendotetrisai/">meatfighter.com for this great article on NES Tetris AI</a> and <a href="https://datacrystal.romhacking.net/wiki/Tetris_(NES)">the Data Crystal page on NES Tetris.</a>
+          </p>
+          <p>
+            Right now I'm thinking of ways to improve it, and will almost certainly end up completing re-inventing this project.
+            It was a lot of fun the first time.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
