@@ -1,4 +1,4 @@
-# Creating this site
+# Creating this website
 
 Nearing the end of my junior year in college, I still hadn't finished a project that I felt comfortable calling "significant." All the things I wrote were either snippets of code, small toys, or abandoned. In the interest of changing that, I decided to choose something significant that would keep me interested: I would finally make my own website, and make it as personalized as I could. That meant, of course, writing the backend from scratch.
 
