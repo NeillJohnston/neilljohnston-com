@@ -17,7 +17,6 @@
 
 html {
   color: var(--black);
-  scroll-behavior: smooth;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5em;
@@ -127,18 +126,14 @@ a.inverted {
   .content {
     margin: 40px 10%;
   }
-
-  .nav > * {
-    margin: 20px;
-  }
 }
 
 @media only screen and (max-width: 640px) {
   .content {
-    margin: 40px 40px;
+    margin: 40px 16px;
   }
 
   .nav > * {
-    margin: 12px;
+    margin: 16px;
   }
 }
